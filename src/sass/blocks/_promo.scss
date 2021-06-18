@@ -1,0 +1,68 @@
+.promo {
+    min-height: 650px;
+    padding: 21px 0 93px;
+    background:
+        linear-gradient(
+            rgba($bg-shadow-color, .4),
+            rgba($bg-shadow-color, .4)),
+        url('../img/background/header_bg.jpg') center (center/cover) no-repeat;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 91px;
+    }
+
+    &__header {
+        margin: 0;
+        line-height: 42px;
+        font-size: 42px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &__subheader {
+        margin-top: 17px;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    &__icons {
+        margin-top: 65px;
+        width: 425px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__icon {
+        width: 106px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 1.2;
+        font-family: 'Museo Sans Cyrl 500';
+        font-weight: 500;
+        color: #ffffff;
+        img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__link {
+        margin-top: 18px;
+        font-size: 16px;
+        line-height: 1.2;
+        font-weight: 500;
+        color: #ffffff;
+        a {
+            text-decoration: underline;
+            color:#fff;
+        }
+    }
+}
