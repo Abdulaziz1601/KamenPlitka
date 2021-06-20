@@ -1,9 +1,15 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+@import 'libs/animate.min';
+@import 'libs/tiny-slider';
+
 @import 'base/variables';
+@import 'base/animations';
 
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
-
+// changing selecting color
 ::-moz-selection {
     color: #fff;
     background: #ad974f;
@@ -36,7 +42,6 @@
 @import 'blocks/pageup';
 
 @import 'base/media';
-@import 'base/animations';
 
 
 
