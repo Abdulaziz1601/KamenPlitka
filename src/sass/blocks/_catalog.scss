@@ -60,9 +60,6 @@
         margin-bottom: 20px;
         margin-right: 20px;
         transition: all 0.5s;
-        &:nth-child(3n) {
-            margin-right: 0;
-        }
 
         &__img {
             display: block;
