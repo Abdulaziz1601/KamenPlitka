@@ -51,6 +51,11 @@ $(document).ready(function () {
 		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
 	})
 	
+	$(window).on("keyup", function(e) {
+		if(e.keyCode == 27 && $('.modal').is(":visible") ) {
+			$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
+		}
+	})
 
 	$('.button_mini').each(function(i) {
 		$(this).on('click', function() {
@@ -84,9 +89,9 @@ $(document).ready(function () {
 	validateForms('#order form');
 
 	// masking phone number
-
-	$('input[name=phone]').mask("(99) 999-99-99"); //!!! this plugin do not work with type=number or type=tel
-
+	$.mask.definitions['9'] = false;
+	$.mask.definitions['5'] = "[0-9]";
+	$('input[name=phone]').mask("+998(95) 555-55-55"); //!!! this plugin do not work with type=number or type=tel
 	// getting mails from clients, using ajax and php
 
 	// when smth is submitted, after validation 

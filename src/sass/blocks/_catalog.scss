@@ -22,7 +22,7 @@
         line-height: 48px;
         transform: skewX(-25deg);   
         margin: 0 5px;
-        transition: 0.5s all;
+        transition: all 0.5s;
         cursor: pointer;
         &:hover {
             box-shadow: 2px 2px 30px $main-color;
@@ -44,7 +44,7 @@
         margin-top: 60px;
         display: none;
         flex-wrap: wrap;
-        transition: 0.5s all;
+        transition: all 0.5s;
         &_active {
             display: flex;
             justify-content: center;
@@ -59,7 +59,7 @@
         overflow: hidden;
         margin-bottom: 20px;
         margin-right: 20px;
-        transition: 0.5s all;
+        transition: all 0.5s;
         &:nth-child(3n) {
             margin-right: 0;
         }
@@ -68,7 +68,7 @@
             display: block;
             margin: 0 auto;
             max-width: 100%;
-            width: 225px;
+            width: 200px;
         }
 
         &__subtitle {
@@ -113,7 +113,7 @@
             color: $main-color;
             text-align: center;
             text-transform: uppercase;
-            transition: 0.5s all;
+            transition: all 0.5s;
             &:hover {
                 color: $main-color;
             }
@@ -149,15 +149,13 @@
         &__wrapper {
             display: flex;
             width: calc(200% + 40px);
-            transition: 0.5s all;
+            transition: all 0.5s;
         }
-
         &__content {
             width: 50%;
             margin-right: 0px;
             transform: translateX(-100%);
-            transition: 0.5 all;
-
+            transition: all .07s;
             &_active {
                 transform: translateX(0%);
                 margin-right: 20px;

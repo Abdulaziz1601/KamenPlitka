@@ -60,7 +60,6 @@
     }
 
     .header {
-
         &__official {
             font-size: 11px;
 
@@ -84,7 +83,7 @@
         padding-bottom: 60px;
 
         .tns-item img {
-            width: 500px;
+            width: 600px;
         }
 
         .tns-nav {
@@ -92,11 +91,11 @@
         }
 
         .prev {
-            left: 50px
+            left: -20px
         }
 
         .next {
-            right: 50px;
+            right: -20px;
         }
     }
 
@@ -217,18 +216,17 @@
     .carousel {
         .tns-item {
             img {
-
-                width: 350px;
+                width: 450px;
             }
         }
 
         .prev {
-            left: 30px
+            left: -35px
         }
 
         .next {
 
-            right: 30px;
+            right: -35px;
         }
 
     }
@@ -375,6 +373,9 @@
 
         &__icon {
             margin-top: 30px;
+            &_animated {
+                animation: none;
+            }
         }
     }
 
@@ -439,6 +440,9 @@
         &__item {
             &__list li {
                 font-size: 12px;
+            }
+            &__img {
+                width: 180px;
             }
         }
     }
