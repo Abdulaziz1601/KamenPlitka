@@ -240,6 +240,7 @@
         }
 
         &-item {
+            min-height: 350px;
             &:nth-child(n) {
                 margin: 0 0 20px 0;
             }
@@ -283,6 +284,9 @@
         }
         &__descr {
             font-size: 13px;
+        }
+        &_mini {
+            min-height: 140px; 
         }
         .feed-form {
             width: 100%;
@@ -401,9 +405,12 @@
     }
 
     .carousel {
+        .container {
+            max-width: 500px;
+        }
         .tns-item {
             img {
-                width: 270px;
+                width: 90%;
             }
         }
 
@@ -436,12 +443,38 @@
             height: 40px;
         }
 
-        &__item {
+        &-item {
+            padding: 20px;
+            &__subtitle {
+                margin-top: 20px;
+            }
+            &__descr {
+                margin-top: 10px;
+            }
+            &__link {
+                margin-top: 10px;
+            }
             &__list li {
                 font-size: 12px;
             }
             &__img {
                 width: 180px;
+            }
+            hr {
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+           
+            &__old-price {
+                font-size: 13px;
+            }
+            &__price {
+                margin-top: 5px;
+                font-size: 18px;
+            }
+           
+            .button {
+                margin-top: 5px;
             }
         }
     }
@@ -480,6 +513,9 @@
         }
         &__descr {
             font-size: 12px;
+        }
+        &_mini {
+            min-height: 100px; 
         }
         .feed-form {
             input {

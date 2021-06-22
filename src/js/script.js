@@ -47,7 +47,7 @@ $(document).ready(function () {
 		$('.overlay, #consultation').fadeIn('slow'); // to make our code laconic we can write like this <-
 	});
 
-	$('.modal__close').on('click', function() {
+	$('.modal__close, .overlay').on('click', function() {
 		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
 	})
 	
