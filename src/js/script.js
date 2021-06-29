@@ -47,7 +47,7 @@ $(document).ready(function () {
 		$('.overlay, #consultation').fadeIn('slow'); // to make our code laconic we can write like this <-
 	});
 
-	$('.modal__close, .overlay').on('click', function() {
+	$('.modal__close').on('click', function() {
 		$('.overlay, #consultation, #thanks, #order').fadeOut('slow');
 	})
 	
@@ -128,4 +128,23 @@ $(document).ready(function () {
 	});	
 
 	new WOW().init();
+
+	const modal = document.querySelector("#imgModal");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	const img = document.querySelectorAll("#imgPrev");
+	const modalImg = document.querySelector('.modal-content');
+	const captionText = document.querySelector("#caption");
+
+	img.forEach(item => {
+		item.addEventListener('click', (e) => {
+			modal.style.display = "block";
+			modalImg.src = e.target.src;
+			captionText.innerHTML = e.target.alt;
+		});
+	})
+	// Get the <span> element that closes the modal
+	const closeImgModal = document.querySelector(".closeImgModal");
+
+	closeImgModal.onclick = () => modal.style.display = "none";
 });
